@@ -32,8 +32,8 @@ jobs:
 
              - name: Build the Docker image
                run: |
-                  docker build -t 180169423799.dkr.ecr.us-east-1.amazonaws.com/demo-project:$GITHUB_REF_NAME-$GITHUB_SHA . 
-                  docker push 180169423799.dkr.ecr.us-east-1.amazonaws.com/demo-project:$GITHUB_REF_NAME-$GITHUB_SHA
+                  docker build -t 339713114196.dkr.ecr.eu-north-1.amazonaws.com/nodejs-project:$GITHUB_REF_NAME-$GITHUB_SHA . 
+                  docker push 339713114196.dkr.ecr.eu-north-1.amazonaws.com/nodejs-project:$GITHUB_REF_NAME-$GITHUB_SHA
 
                   git clone https://${{secrets.AWS_GITHUB_USER}}:${{secrets.AWS_GITHUB_TOKEN}}@github.com/saiurakrishna/gitops-k8s.git
 
